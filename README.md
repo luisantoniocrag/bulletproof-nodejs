@@ -47,7 +47,7 @@ You can use Gitpod for the one click online setup. With a single click it will l
 
 # API Validation
 
- By using celebrate the req.body schema becomes clary defined at route level, so even frontend devs can read what an API endpoint expects without need to writting a documentation that can get outdated quickly.
+ By using [celebrate](https://github.com/arb/celebrate), the req.body schema becomes cleary defined at route level, so even frontend devs can read what an API endpoint expects without needing to write documentation that can get outdated quickly.
 
  ```js
  route.post('/signup',
@@ -84,6 +84,9 @@ You can use Gitpod for the one click online setup. With a single click it will l
 - [ ] Integration test with newman 😉
 - [ ] Instructions on typescript debugging with VSCode
 
+## API Documentation
+
+To simplify documenting your API, we have included [Optic](https://useoptic.com). To use it, you will need to [install the CLI tool](https://useoptic.com/document/#add-an-optic-specification-to-your-api-project), and then you can use `api exec "npm start"` to start capturing your endpoints as you create them. Once you want to review and add them to your API specification run: `api status -- review`.
 
 # FAQ
 
